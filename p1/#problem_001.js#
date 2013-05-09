@@ -1,0 +1,9 @@
+function findMultSum (a, b, ceiling) {
+    var sum = 0;
+    for (num = 1; num < ceiling; num++) {
+	if ((num % a) === 0 || (num % b) === 0) {
+	    sum = sum + num;
+	};
+    }
+    return sum;
+}
